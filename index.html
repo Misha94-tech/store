@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Store Landing Page</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    /* Custom styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    /* Navbar brand */
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    /* Product card styling */
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .product-img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      object-fit: cover;
+      height: 200px;
+      width: 100%;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with navbar -->
+  <header>
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Boutiquatt</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Product Section -->
+  <main class="container my-5" id="products">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row g-4">
+      
+      <!-- Product Card 1 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2lyZWxlc3MlMjBIZWFkcGhvbmVzfGVufDB8fDB8fHww" alt="Product 1" class="product-img" />
+          <div class="p-3">
+            <h5>Wireless Headphones</h5>
+            <p>Experience high-quality sound without wires.</p>
+            <button class="btn btn-primary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1617625802912-cde586faf331?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D" alt="Product 2" class="product-img" />
+          <div class="p-3">
+            <h5>Smartwatch</h5>
+            <p>Stay connected and track your fitness goals.</p>
+            <button class="btn btn-primary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1608223652565-63abae6cf733?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UG9ydGFibGUlMjBTcGVha2VyfGVufDB8fDB8fHww" alt="Product 3" class="product-img" />
+          <div class="p-3">
+            <h5>Portable Speaker</h5>
+            <p>Bring the party anywhere with rich sound.</p>
+            <button class="btn btn-primary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Rml0bmVzcyUyMFRyYWNrZXJ8ZW58MHx8MHx8fDA%3D" alt="Product 4" class="product-img" />
+          <div class="p-3">
+            <h5>Fitness Tracker</h5>
+            <p>Monitor your daily activity and sleep patterns.</p>
+            <button class="btn btn-primary w-100">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Boutiquatt. All rights reserved.</p>
+      <p>
+        <a href="#products" class="text-white text-decoration-none me-3">Products</a>
+        <a href="#about" class="text-white text-decoration-none me-3">About</a>
+        <a href="#contact" class="text-white text-decoration-none">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (for navbar toggler functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
